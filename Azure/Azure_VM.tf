@@ -7,6 +7,7 @@ resource "azurerm_managed_disk" "example" {
   disk_size_gb         = var.disk_size_gb
   tags = var.common_tags
 }
+
 resource "azurerm_virtual_machine" "my-linux-vm" {
   name                  = "my-linux-vm"
   location              = "California"
